@@ -36,8 +36,9 @@ class MainActivity : ComponentActivity() {
                     Column(modifier = Modifier.fillMaxSize()) {
 
                         when (selectedTabIndex) {
-                            0 -> ReelsScreen(modifier = Modifier.weight(9.3f))
+                            0 -> HomeScreen(modifier = Modifier.weight(9.3f))
                             1 -> SearchScreen(modifier = Modifier.weight(9.3f))
+                            2 -> AddContentScreen(modifier = Modifier.weight(9.3f))
                             3 -> ReelsScreen(modifier = Modifier.weight(9.3f))
                             4 -> ProfileScreen(modifier = Modifier.weight(9.3f))
                         }
